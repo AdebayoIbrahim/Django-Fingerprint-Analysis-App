@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles/Results.css' %}" />
+    <script src="{% static 'js/Results.js'%}" defer></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <nav>
+        <h2>FINAL REPORT OF THE ANALYSIS</h2>
+      </nav>
+    </div>
+    <div class="first-table-section">
+      <table>
+        <tr>
+          <th>Right Fingerprint</th>
+          <th>Pattern</th>
+          <th>Count</th>
+          <th>Left Fingerprint</th>
+          <th>Pattern</th>
+          <th>Count</th>
+        </tr>
+        <tr>
+          <td>Thumb</td>
+          <td><span class="right-pattern"></span></td>
+          <td><span class="right-count"></span></td>
+          <td>Thumb</td>
+          <td><span class="left-pattern"></span></td>
+          <td><span class="left-count"></span></td>
+        </tr>
+        <tr>
+          <td>Index finger</td>
+          <td><span class="sec-rite-pattern"></span></td>
+          <td><span class="sec-rite-count"></span></td>
+          <td>Index Finger</td>
+          <td><span class="sec-left-pattern"></span></td>
+          <td><span class="sec-left-count"></span></td>
+        </tr>
+        <tr>
+          <td>Middle finger</td>
+          <td><span class="th-rite-pattern"></span></td>
+          <td><span class="th-rite-count"></span></td>
+          <td>Middle Finger</td>
+          <td><span class="th-left-pattern"></span></td>
+          <td><span class="th-left-count"></span></td>
+        </tr>
+        <tr>
+          <td>Ring finger</td>
+          <td><span class="fth-rite-pattern"></span></td>
+          <td><span class="fth-rite-count"></span></td>
+          <td>Ring Finger</td>
+          <td><span class="fth-left-pattern"></span></td>
+          <td><span class="fth-left-count"></span></td>
+        </tr>
+        <tr>
+          <td>Little finger</td>
+          <td><span class="fifth-rite-pattern"></span></td>
+          <td><span class="fifth-rite-count"></span></td>
+          <td>Little Finger</td>
+          <td><span class="fifth-left-pattern"></span></td>
+          <td><span class="fifth-left-count"></span></td>
+        </tr>
+        <tr>
+          <td>Total Ridge Count(Right)</td>
+          <td></td>
+          <td><span class="total-ridge-count-right"></span></td>
+          <td>Total Ridge Count(Left)</td>
+          <td></td>
+          <td><span class="total-ridge-count-left"></span></td>
+        </tr>
+      </table>
+    </div>
+    <div class="second-result">
+      <table>
+        <tr>
+          <th>Palm</th>
+          <th>ATD Angle</th>
+        </tr>
+        <tr>
+          <td>Right</td>
+          <td>78 Degree</td>
+        </tr>
+        <tr>
+          <td>Left</td>
+          <td>49 Degree</td>
+        </tr>
+      </table>
+    </div>
+    <div class="action-buttons">
+      <button id="printPage">Print</button>
+      <a href="Results.html" download="Results">Save</a>
+    </div>
+    <p style="text-align: right; margin-bottom: 5px; color: firebrick">
+      Powered By &copy;SetUp
+    </p>
+  </body>
+</html>

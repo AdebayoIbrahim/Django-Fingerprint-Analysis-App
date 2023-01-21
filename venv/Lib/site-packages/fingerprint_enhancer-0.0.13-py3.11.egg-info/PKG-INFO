@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: fingerprint-enhancer
+Version: 0.0.13
+Summary: enhance fingerprint images
+Home-page: https://github.com/Utkarsh-Deshmukh/Fingerprint-Enhancement-Python
+Download-URL: https://github.com/Utkarsh-Deshmukh/Fingerprint-Enhancement-Python/archive/develop.zip
+Author: utkarsh-deshmukh
+Author-email: utkarsh.deshmukh@gmail.com
+License: MIT
+Keywords: Fingerprint Image Enhancement
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Fingerprint-Enhancement-Python
+
+Uses oriented gabor filter bank to enhance the fingerprint image. The orientation of the gabor filters is decided by the orientation of ridges in the input image.
+
+
+## Quickstart
+
+This library performs fingerprint image enhancement which is necessary in biometric recognition systems applications.
+
+## Installation
+To install, run:
+```
+pip install fingerprint_enhancer
+```
+
+## Usage:
+```Python
+import fingerprint_enhancer								# Load the library
+img = cv2.imread('image_path', 0)						# read input image
+out = fingerprint_enhancer.enhance_Fingerprint(img)		# enhance the fingerprint image
+cv2.imshow('enhanced_image', out);						# display the result
+cv2.waitKey(0)											# hold the display window
+```
+As easy as that!

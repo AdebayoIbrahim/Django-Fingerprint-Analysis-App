@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electron Project</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles/main.css' %}" />
+    <script src="{% static 'js/app.js'%}" defer></script>
+  </head>
+
+  <body>
+    <!-- <a href="{% url 'landing' %}" target="_blank">Check</a> -->
+    <div class="container">
+      <div class="outer">
+        <div class="text-holder">R1</div>
+        <div class="img_container" id="img_container_1"></div>
+        <div class="btnContainer">
+          <form
+            action="/external/"
+            method="post"
+            enctype="multipart/form-data"
+            target="_blank"
+          >
+            {% csrf_token %}
+            <input
+              class="file-input"
+              type="file"
+              accept="image/*"
+              name="img"
+              id="1"
+              required
+            />
+            <button type="button" class="del" id="fst">Remove</button>
+            <input type="submit" class="fetch" value="Analyze" />
+          </form>
+        </div>
+      </div>
+
+      <div class="outer">
+        <div class="text-holder">R2</div>
+        <div class="img_container" id="img_container_2"></div>
+        <div class="btnContainer">
+          <form
+            action="/external/"
+            method="post"
+            enctype="multipart/form-data"
+            target="_blank"
+          >
+            {% csrf_token %}
+            <input
+              class="file-input"
+              type="file"
+              accept="image/*"
+              name="img"
+              id="2"
+              required
+            />
+            <button type="button" class="del" id="scnd">Remove</button>
+            <input type="submit" class="fetch" value="Analyze" />
+          </form>
+        </div>
+      </div>
+
+      <div class="outer">
+        <div class="text-holder">R3</div>
+        <div class="img_container" id="img_container_3"></div>
+        <div class="btnContainer">
+          <form
+            action="/external/"
+            method="post"
+            enctype="multipart/form-data"
+            target="_blank"
+          >
+            {% csrf_token %}
+            <input
+              class="file-input"
+              type="file"
+              accept="image/*"
+              name="img"
+              id="3"
+              required
+            />
+            <button type="button" class="del" id="thd">Remove</button>
+            <input type="submit" class="fetch" value="Analyze" />
+          </form>
+        </div>
+      </div>
+
+      <div class="outer">
+        <div class="text-holder">R4</div>
+        <div class="img_container" id="img_container_4"></div>
+        <div class="btnContainer">
+          <form
+            action="/external/"
+            method="post"
+            enctype="multipart/form-data"
+            target="_blank"
+          >
+            {% csrf_token %}
+            <input
+              class="file-input"
+              type="file"
+              accept="image/*"
+              name="img"
+              id="4"
+              required
+            />
+            <button type="button" class="del" id="fth">Remove</button>
+            <input type="submit" class="fetch" value="Analyze" />
+          </form>
+        </div>
+      </div>
+
+      <div class="outer">
+        <div class="text-holder">R5</div>
+        <div class="img_container" id="img_container_5"></div>
+        <div class="btnContainer">
+          <form
+            action="/external/"
+            method="post"
+            enctype="multipart/form-data"
+            target="_blank"
+          >
+            {% csrf_token %}
+            <input
+              class="file-input"
+              type="file"
+              accept="image/*"
+              name="img"
+              id="5"
+              required
+            />
+            <button type="button" class="del" id="fifth">Remove</button>
+            <input type="submit" class="fetch" value="Analyze" />
+          </form>
+        </div>
+      </div>
+
+      <div class="outer">
+        <div class="text-holder">L1</div>
+        <div class="img_container" id="img_container_6"></div>
+        <div class="btnContainer">
+          <form
+            action="/external/"
+            method="post"
+            enctype="multipart/form-data"
+            target="_blank"
+          >
+            {% csrf_token %}
+            <input
+              class="file-input"
+              type="file"
+              accept="image/*"
+              name="img"
+              id="6"
+              required
+            />
+            <button type="button" class="del" id="sixth">Remove</button>
+            <input type="submit" class="fetch" value="Analyze" />
+          </form>
+        </div>
+      </div>
+
+      <div class="outer">
+        <div class="text-holder">L2</div>
+        <div class="img_container" id="img_container_7"></div>
+        <div class="btnContainer">
+          <form
+            action="/external/"
+            method="post"
+            enctype="multipart/form-data"
+            target="_blank"
+          >
+            {% csrf_token %}
+            <input
+              class="file-input"
+              type="file"
+              accept="image/*"
+              name="img"
+              id="7"
+              required
+            />
+            <button type="button" class="del" id="sevth">Remove</button>
+            <input type="submit" class="fetch" value="Analyze" />
+          </form>
+        </div>
+      </div>
+
+      <div class="outer">
+        <div class="text-holder">L3</div>
+        <div class="img_container" id="img_container_8"></div>
+        <div class="btnContainer">
+          <form
+            action="/external/"
+            method="post"
+            enctype="multipart/form-data"
+            target="_blank"
+          >
+            {% csrf_token %}
+            <input
+              class="file-input"
+              type="file"
+              accept="image/*"
+              name="img"
+              id="8"
+              required
+            />
+            <button type="button" class="del" id="eight">Remove</button>
+            <input type="submit" class="fetch" value="Analyze" />
+          </form>
+        </div>
+      </div>
+
+      <div class="outer">
+        <div class="text-holder">L4</div>
+        <div class="img_container" id="img_container_9"></div>
+        <div class="btnContainer">
+          <form
+            action="/external/"
+            method="post"
+            enctype="multipart/form-data"
+            target="_blank"
+          >
+            {% csrf_token %}
+            <input
+              class="file-input"
+              type="file"
+              accept="image/*"
+              name="img"
+              id="9"
+              required
+            />
+            <button type="button" class="del" id="ninth">Remove</button>
+            <input type="submit" class="fetch" value="Analyze" />
+          </form>
+        </div>
+      </div>
+
+      <div class="outer">
+        <div class="text-holder">L5</div>
+        <div class="img_container" id="img_container_10"></div>
+        <div class="btnContainer">
+          <form
+            action="/external/"
+            method="post"
+            enctype="multipart/form-data"
+            target="_blank"
+          >
+            {% csrf_token %}
+            <input
+              class="file-input"
+              type="file"
+              accept="image/*"
+              name="img"
+              id="10"
+              required
+            />
+            <button type="button" class="del" id="tenth">Remove</button>
+            <input type="submit" class="fetch" value="Analyze" />
+          </form>
+        </div>
+      </div>
+
+      <!-- <div class="outer">
+        <div class="text-holder">R1</div>
+        <div class="img_container" id="img_container_10"></div>
+        <div class="btnContainer">
+          <input
+            class="file-input"
+            type="file"
+            accept="image/*"
+            name="image"
+            id="10"
+            required
+          />
+          <button type="button" class="del" id="tenth">Remove</button>
+          <button type="button" class="fetch">Analyze</button>
+        </div>
+      </div> -->
+    </div>
+  </body>
+</html>

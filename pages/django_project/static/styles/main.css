@@ -1,0 +1,143 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: repeating-linear-gradient(60deg, #000, #111, #000 5px);
+}
+
+div.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-block: 4%;
+  padding-top: 1.3em;
+  gap: 1.2em 1.2em;
+  justify-content: center;
+  margin-inline: clamp(6px, 10px, 0.7em);
+}
+
+.outer {
+  /* margin-block: 3em; */
+  width: 250px;
+}
+.img_container {
+  width: inherit;
+  height: 250px;
+  border: 2px solid dodgerblue;
+}
+
+.file-input::-webkit-file-upload-button {
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.file-input::-moz-file-upload-button {
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.file-input {
+  color: transparent;
+  /* position: relative; */
+  overflow: hidden;
+  margin-right: auto;
+  width: calc(66px + 0.88px);
+}
+.file-input::before {
+  content: "Import";
+  display: inline-block;
+  color: #fff;
+  /* position: absolute; */
+  background: linear-gradient(180deg, #4b91f7 0%, #367af6 100%);
+  padding: 6px 8px;
+  border: none;
+  border: 2px solid;
+  user-select: none;
+  cursor: pointer;
+  font-family: Cascadia Code;
+  border-radius: 6px;
+}
+
+button {
+  display: inline-block;
+  color: #fff;
+  background: #1e9c1e;
+  /* background: linear-gradient(180deg, #4b91f7 0%, #367af6 100%); */
+  padding: 6px 8px;
+  border: none;
+  border: 2px solid;
+  user-select: none;
+  cursor: pointer;
+  font-family: Cascadia Code;
+  border-radius: 6px;
+}
+
+button:first-of-type {
+  background: rgb(202, 6, 6);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: scaling 2s forwards;
+}
+@keyframes scaling {
+  from {
+    opacity: 0.4;
+    transform: scale(0.4);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+input[type="submit"] {
+  display: inline-block;
+  color: #fff;
+  background: #1e9c1e;
+  /* background: linear-gradient(180deg, #4b91f7 0%, #367af6 100%); */
+  padding: 6px 8px;
+  border: none;
+  border: 2px solid;
+  user-select: none;
+  cursor: pointer;
+  font-family: Cascadia Code;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.btnContainer {
+  display: flex;
+  margin-top: 3px;
+  justify-content: center;
+  background: rgba(211, 206, 206, 0.5);
+  padding: 4px;
+  border: 2px solid dodgerblue;
+}
+form {
+  padding: 0;
+  margin: 0;
+  display: inherit;
+  gap: calc(1em - 0.08em);
+}
+
+div.text-holder {
+  user-select: none;
+}
+.fetch {
+  margin-left: auto;
+}
+.text-holder {
+  background: black;
+  text-align: center;
+  display: inline-block;
+  /* border: 2px solid dodgerblue; */
+  color: white;
+  width: 100%;
+  padding: 4px;
+  /* border-radius: 5px; */
+}

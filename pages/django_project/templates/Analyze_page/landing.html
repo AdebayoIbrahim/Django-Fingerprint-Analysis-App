@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analysis</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles/landing.css' %}" />
+    <script src="{% static 'js/landing.js'%}" defer></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <nav>
+        <h2>DERMATOGLYPHICS ANALYZING SYSTEM</h2>
+      </nav>
+    </div>
+
+    <div class="main_container">
+      <section class="image-holder">
+        <p>Please Wait While Your File Is Loading...</p>
+      </section>
+
+      <div class="btn_group_output">
+        <div class="btn_group_output__buttons">
+          <button type="button" id="actionbutton">Normalization</button>
+          <button type="button" id="actionbutton">Segmentation</button>
+          <button type="button" id="actionbutton">Oriental Filter</button>
+          <button type="button" id="actionbutton">Binarization</button>
+          <button type="button" id="actionbutton">Thining</button>
+          <button type="button" id="actionbutton">Features</button>
+        </div>
+
+        <div class="btn_group_output__display">
+          <img id="processed-image" />
+          <!-- <canvas id="line-cut" width="296" height="396"></canvas> -->
+        </div>
+      </div>
+
+      <section class="results">
+        <div class="results__finger-info">
+          <h4>Finger Information</h4>
+          <div class="pattern-info">
+            <label for="pattern">Pattern: </label>
+            <select name="select" id="pattern">
+              <option value="Left Loop">Left Loop</option>
+              <option value="Right Loop">Right Loop</option>
+              <option value="Whorle">Whorle</option>
+              <option value="Ulnar">Ulnar</option>
+              <option value="Tent">Tent</option>
+            </select>
+          </div>
+
+          <div class="core-info">
+            <label for="core">Core: </label>
+            <select name="core" id="core">
+              <option value="1">1</option>
+              <option value="2">2</option>
+            </select>
+          </div>
+
+          <div class="delta-info">
+            <label for="delta">Delta: </label>
+            <select name="delta" id="pattern">
+              <option value="1">1</option>
+              <option value="2">2</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="results__finger-analyst">
+          <h4>Finger Analysis</h4>
+          <div class="rrc-llc-btn">
+            <div class="lrc">
+              <div>
+                <label for="lrc">RRC1</label>
+                <input type="number" id="lrc" />
+              </div>
+              <div>
+                <label for="lrc2">RRC2</label>
+                <input type="number" id="lrc2" />
+              </div>
+              <div>
+                <label for="lrc3">RRC3</label>
+                <input type="number" id="lrc3" />
+              </div>
+              <div>
+                <label for="lrc4">RRC4</label>
+                <input type="number" id="lrc4" />
+              </div>
+              <div>
+                <label for="lrc5">RRC5</label>
+                <input type="number" id="lrc5" />
+              </div>
+              <!-- <div class="rrc-total">
+                <label for="RRC">RRC</label>
+                <input type="number" name="RRC" id="RRC" />
+              </div> -->
+            </div>
+            <div class="rrc">
+              <div>
+                <label for="rrc">LRC1 </label>
+                <input type="text" id="rrc" />
+              </div>
+              <div>
+                <label for="rrc2">LRC2 </label>
+                <input type="text" id="rrc2" />
+              </div>
+              <div>
+                <label for="rrc3">LRC3 </label>
+                <input type="text" id="rrc3" />
+              </div>
+              <div>
+                <label for="rrc4">LRC4 </label>
+                <input type="text" id="rrc4" />
+              </div>
+              <div>
+                <label for="rrc5">LRC5 </label>
+                <input type="text" id="rrc5" />
+              </div>
+
+              <!-- <div class="lrc-total">
+                <label for="RRC">LRC</label>
+                <input type="number" name="RRC" id="RRC" />
+              </div> -->
+            </div>
+            <!-- <div class="ttrc">
+              <label for="TRRC">TRRC</label>
+              <input type="number" name="RRC" id="RRC" />
+            </div> -->
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="finalreport-btn">
+      <form>
+        <button type="submit" aria-label="results" class="result-btn">
+          save
+        </button>
+      </form>
+
+      <span class="span"></span>
+    </div>
+  </body>
+</html>
