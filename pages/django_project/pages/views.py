@@ -5,6 +5,10 @@ from django.views.generic import TemplateView
 import sys
 from subprocess import run,PIPE
 from django.core.files.storage import FileSystemStorage  
+from django.conf import settings
+import os
+
+# from pages.Binarize import enhance
 # Create your views here.
 
 
@@ -34,14 +38,19 @@ def external(request):
     print("template url =>",templateurl)
     # Binarize file image
     # --------   Binarize -------
-    image = run([sys.executable,"C:\\Users\\SetUp\\Desktop\\code\\pages\\django_project\\Binarize.py",str(fileurl),str(filename)],shell = False,stdout = PIPE)
+    # image = run([sys.executable,"C:\\Users\\SetUp\\Desktop\\code\\pages\\django_project\\Binarize.py",str(fileurl),str(filename)],shell = False,stdout = PIPE)
+    
+
+    image = run([sys.executable,
+    os.path.join(settings.BASE_DIR, 'Binarize.py'),str(fileurl),str(filename)],shell = False,stdout = PIPE)
+    
     # segmentize file image
     # --------   Segmentize -------
-    image = run([sys.executable,"C:\\Users\\SetUp\\Desktop\\code\\pages\\django_project\\segmentize.py",str(fileurl),str(filename)],shell = False,stdout = PIPE)
+    image = run([sys.executable,'segmentize.py',str(fileurl),str(filename)],shell = False,stdout = PIPE)
 
     # Normalize file image
     # --------   Normalize -------
-    image = run([sys.executable,"C:\\Users\\SetUp\\Desktop\\code\\pages\\django_project\\Normalize.py",str(fileurl),str(filename)],shell = False,stdout = PIPE)
+    image = run([sys.executable,'Normalize.py',str(fileurl),str(filename)],shell = False,stdout = PIPE)
 
     # Oriental Filtering of finger
     # -------- Oriental filter -----
