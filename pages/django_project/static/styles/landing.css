@@ -204,7 +204,7 @@ div.rrc input {
   display: flex;
   justify-content: center;
   margin-top: -15px;
-  padding: 10px;
+  padding: 5px;
 }
 .finalreport-btn > form > button {
   display: inline-block;
@@ -249,19 +249,19 @@ input {
   outline: none !important;
 } */
 
-@media only screen and (max-width: 1300px) {
+/* @media only screen and (max-width: 1300px) {
   div.main_container {
     display: flex;
-    /* grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr)); */
-    /* gap: 1em; */
+     grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr)); 
+     gap: 1em; 
     justify-content: center;
-    /* align-items: center; */
+    align-items: center; 
     flex-wrap: wrap;
     width: 100%;
     margin-top: 1em;
     padding: 0.2em;
-    /* grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr; */
+     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr; 
   }
   section.results {
     width: 80%;
@@ -270,5 +270,5 @@ input {
   .finalreport-btn {
     margin-top: 15px;
   }
-  /* later solved btn group buttons in percentages*/
-}
+   later solved btn group buttons in percentages 
+} */

@@ -95,7 +95,10 @@ btn.forEach((del) => {
     if (imgContainer.hasChildNodes()) {
       let children = imgContainer.childNodes;
       for (const node of children) {
-        node.remove();
+        if (node.tagName.toLowerCase() == "img") {
+          node.remove();
+          console.log("removed succesfully");
+        }
       }
     } else {
       alert("No Files To Remove");

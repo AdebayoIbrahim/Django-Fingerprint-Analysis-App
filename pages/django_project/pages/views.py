@@ -27,8 +27,6 @@ def result(request):
 def external(request):
     # inp = request.POST.get('param')
     image = request.FILES['img']
-
-    print("Uploaded Image Is",image)
     fs = FileSystemStorage()
     filename = fs.save(image.name,image)
     fileurl = fs.open(filename)
