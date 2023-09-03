@@ -53,6 +53,10 @@ for (let i = 0; i < input.length; i++) {
     }
     //reset import values
     // event.target.value = null;
+    // if (!imgContainer.hasChildNodes) {
+    //   console.log(event.target.value);
+    //   event.target.files = null;
+    // }
   });
 }
 
