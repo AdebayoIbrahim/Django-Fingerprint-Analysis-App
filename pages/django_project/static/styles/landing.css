@@ -82,9 +82,19 @@ div.main_container {
   width: 600px;
   height: 400px;
   border: 1px solid blueviolet;
-  /* display: flex;
-    justify-content: center;
-    align-items: center; */
+  position: relative;
+}
+
+.btn_group_output__display > img {
+  position: absolute;
+  top: 50%;
+  width: 350px;
+  height: 300px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  user-select: none;
+  z-index: -2;
 }
 
 .btn_group_output__buttons {
