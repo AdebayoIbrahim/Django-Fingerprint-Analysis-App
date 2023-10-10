@@ -1,5 +1,5 @@
 # Django-Fingerprint-Analysis-App
-#### Clone this repo 
+#### clone this repo 
 ```
   git clone https https://github.com/AdebayoIbrahim/Django-Fingerprint-Analysis-App.git
 ```
@@ -7,7 +7,7 @@ cd into the root folder and run the below code to download modules needed
 ```
   pip install -r requirements.txt
 ```
-#### Then cd into `pages`, then to `django_project` and run the below code
+#### then cd into `pages`, then to `django_project` and run the below code
 ```
   python manage.py runsever
 ```
