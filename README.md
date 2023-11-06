@@ -1,9 +1,11 @@
-# Django-Fingerprint-Analysis-App
-#### clone this repo 
+## Django-Fingerprint-Analysis-App
+This project is a fingerprint analyzing app that uses python open-cv library to scan uploaded fingerprints with some Excellent features
+
+#### Clone this repo 
 ```
   git clone https https://github.com/AdebayoIbrahim/Django-Fingerprint-Analysis-App.git
 ```
-cd into the root folder and run the below code to download modules needed
+Cd into the root folder and run the below code to download modules needed
 ```
   pip install -r requirements.txt
 ```
