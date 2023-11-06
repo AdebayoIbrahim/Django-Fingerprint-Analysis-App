@@ -9,7 +9,7 @@ Cd into the root folder and run the below code to download modules needed
 ```
   pip install -r requirements.txt
 ```
-#### then cd into `pages`, then to `django_project` and run the below code
+#### Then cd into `pages`, then to `django_project` and run the below code
 ```
   python manage.py runsever
 ```
