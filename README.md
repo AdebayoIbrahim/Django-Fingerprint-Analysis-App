@@ -1,5 +1,5 @@
 ## Django-Fingerprint-Analysis-App
-This project is a fingerprint analyzing app that uses python open-cv library to scan uploaded fingerprints with some Excellent features
+This project is a fingerprint analyzing app that uses python open-cv library to Analyze uploaded fingerprints with some Excellent features
 
 #### Clone this repo 
 ```
