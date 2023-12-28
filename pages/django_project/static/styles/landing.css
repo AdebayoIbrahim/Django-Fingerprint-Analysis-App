@@ -203,7 +203,6 @@ div.rrc input {
 }
 
 .span {
-  /* visibility: hidden; */
   display: none;
   color: red;
 }
@@ -253,30 +252,3 @@ input {
 :is(input, label):focus {
   outline: 1.5px solid #00a2ffc5;
 }
-/* :is(option, label):focus-visible {
-  outline: none !important;
-} */
-
-/* @media only screen and (max-width: 1300px) {
-  div.main_container {
-    display: flex;
-     grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr)); 
-     gap: 1em; 
-    justify-content: center;
-    align-items: center; 
-    flex-wrap: wrap;
-    width: 100%;
-    margin-top: 1em;
-    padding: 0.2em;
-     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr; 
-  }
-  section.results {
-    width: 80%;
-  }
-
-  .finalreport-btn {
-    margin-top: 15px;
-  }
-   later solved btn group buttons in percentages 
-} */
