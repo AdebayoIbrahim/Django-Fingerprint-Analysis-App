@@ -21,7 +21,6 @@ div.container {
 }
 
 .outer {
-  /* margin-block: 3em; */
   width: 250px;
 }
 .img_container {
@@ -100,7 +99,6 @@ input[type="submit"] {
   display: inline-block;
   color: #fff;
   background: #1e9c1e;
-  /* background: linear-gradient(180deg, #4b91f7 0%, #367af6 100%); */
   padding: 6px 8px;
   border: none;
   border: 2px solid;
@@ -135,9 +133,8 @@ div.text-holder {
   background: black;
   text-align: center;
   display: inline-block;
-  /* border: 2px solid dodgerblue; */
   color: white;
   width: 100%;
   padding: 4px;
-  /* border-radius: 5px; */
+ 
 }
