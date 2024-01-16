@@ -169,9 +169,4 @@ fetchFile.forEach((analyze, index) => {
     }
   });
 });
-/*function onSelect(e) {
-          if (e.files.length > 5) {
-              alert("Only 5 files accepted.");
-              e.preventDefault();
-          }
-      }*/
+

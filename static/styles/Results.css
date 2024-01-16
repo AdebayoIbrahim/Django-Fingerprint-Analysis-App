@@ -75,10 +75,8 @@ td:nth-child(4) {
 a {
   display: inline-block;
   color: black;
-  /* background: white; */
   border: 3px solid black;
   padding: 8px 20px;
-  /* border: 3px solid transparent; */
   user-select: none;
   cursor: pointer;
   font-family: Cascadia Code, Arial;
