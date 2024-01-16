@@ -25,6 +25,7 @@ def result(request):
     return render(request,'Results_page/Results.html')
 
 def external(request):
+    
     # inp = request.POST.get('param')
     image = request.FILES['img']
     fs = FileSystemStorage()
@@ -34,6 +35,11 @@ def external(request):
     print("raw url =>",filename)
     print("full url =>",fileurl)
     print("template url =>",templateurl)
+
+
+
+
+
     # Binarize file image
     # --------   Binarize -------
     # image = run([sys.executable,"C:\\Users\\SetUp\\Desktop\\code\\pages\\django_project\\Binarize.py",str(fileurl),str(filename)],shell = False,stdout = PIPE)
