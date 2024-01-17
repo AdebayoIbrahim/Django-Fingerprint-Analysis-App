@@ -5,11 +5,11 @@ This project is a fingerprint analyzing app that uses python open-cv library to 
 ```
   git clone https https://github.com/AdebayoIbrahim/Django-Fingerprint-Analysis-App.git
 ```
-Cd into the root folder and run the below code to download modules needed
+Cd into the root folder and run the below code to download packages for the app
 ```
   pip install -r requirements.txt
 ```
-#### Then cd into `pages`, then to `django_project` and run the below code
+#### Then, run the below code
 ```
   python manage.py runsever
 ```
