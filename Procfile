@@ -1,0 +1,1 @@
+web: gunciorn pages.wsgi --log-file -
