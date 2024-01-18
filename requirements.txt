@@ -36,3 +36,4 @@ tzdata==2022.7
 urllib3==1.26.13
 virtualenv==20.17.1
 Werkzeug==2.2.2
+gunicorn = *
