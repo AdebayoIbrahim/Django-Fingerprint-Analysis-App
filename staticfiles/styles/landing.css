@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* body {
+  background-image: repeating-linear-gradient(60deg, #000, #111, #000 5px);
+} */
+.image-holder {
+  height: 300px;
+  width: 300px;
+  border: 2px solid dodgerblue;
+  overflow: hidden;
+  position: relative;
+}
+p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-family: Cascadia Code, Arial;
+  transform: translate(-50%, -50%);
+  color: firebrick;
+}
+img:not(.processed-image) {
+  width: 100%;
+  height: 100%;
+  animation: scaling 500ms forwards ease-in-out;
+}
+
+.processed-image {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes scaling {
+  from {
+    opacity: 0.4;
+    transform: scale(0.4);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.navbar {
+  background: black;
+}
+.navbar > nav {
+  text-align: center;
+  color: white;
+  padding: 13px;
+  font-family: Arial;
+}
+.navbar > nav > h2 {
+  color: inherit;
+  font-family: inherit;
+  user-select: none;
+}
+* label {
+  user-select: none;
+}
+
+div.main_container {
+  display: grid;
+  gap: 1em;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 2em;
+  padding: 1.5em;
+}
+
+.btn_group_output {
+  display: flex;
+  height: 500px;
+  gap: 8px;
+}
+
+.btn_group_output__display {
+  width: 600px;
+  height: 400px;
+  border: 1px solid blueviolet;
+  position: relative;
+}
+
+.btn_group_output__display > img {
+  position: absolute;
+  /* top: 50%; */
+  /* width: 350px; */
+  /* height: 300px; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  pointer-events: none;
+  user-select: none;
+  z-index: -2;
+}
+
+.btn_group_output__buttons {
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 1em;
+  height: 60%;
+  width: 50%;
+}
+.btn_group_output__buttons > button {
+  display: inline-block;
+  color: #fff;
+  background: #1e9c1e;
+  /* background: linear-gradient(180deg, #4b91f7 0%, #367af6 100%); */
+  padding: 5px;
+  border: none;
+  border: 3px solid transparent;
+  user-select: none;
+  cursor: pointer;
+  font-family: Cascadia Code, Arial;
+  border-radius: 8px;
+}
+
+.btn_group_output__buttons > button:focus {
+  border: 3px solid #00a2ffc5;
+}
+.btn_group_output__buttons > button:hover {
+  border: 3px solid #00a2ffc5;
+}
+
+section.results {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+
+section.results > .results__finger-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+}
+
+.results__finger-info > h4,
+h4 {
+  background: #00a2ffc5;
+  padding: 6px;
+  border-radius: 8px;
+  text-align: center;
+  font-family: Segoe UI;
+}
+
+select[name="select"] {
+  padding: 3px;
+  width: 60%;
+  margin-left: 2em;
+  border: none;
+  border-radius: 5px;
+  border: 1.5px solid #00a2ffc5;
+}
+
+select[name="delta"] {
+  padding: 3px;
+  width: 50%;
+  margin-left: 3em;
+  border: none;
+  border-radius: 5px;
+  border: 1.5px solid #00a2ffc5;
+  text-indent: 50%;
+}
+select[name="core"] {
+  margin-left: 3.2em;
+  padding: 3px;
+  width: 50%;
+  border: none;
+  border-radius: 5px;
+  border: 1.5px solid #00a2ffc5;
+  text-indent: 50%;
+}
+
+div.rrc input {
+  width: 50px;
+}
+.lrc input {
+  width: 50px;
+}
+.lrc,
+.rrc {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 0.5em;
+}
+
+.rrc-llc-btn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.rrc-total,
+.lrc-total {
+  margin-top: 10px;
+}
+.rrc-total > input {
+  width: 80px;
+}
+.lrc-total input[type="number"] {
+  width: 80px;
+}
+
+.span {
+  display: none;
+  color: red;
+}
+.finalreport-btn {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: -15px;
+  padding: 5px;
+}
+.finalreport-btn > form > button {
+  display: inline-block;
+  color: black;
+  /* background: white; */
+  border: 3px solid black;
+  padding: 8px 20px;
+  /* border: 3px solid transparent; */
+  user-select: none;
+  cursor: pointer;
+  font-family: Cascadia Code, Arial;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.finalreport-btn > form > button:hover {
+  color: white;
+  background: black;
+  border: 3px solid rgb(53, 51, 51);
+}
+#coords {
+  /* display: none; */
+  color: red;
+}
+
+*:is(option, input) {
+  border: none;
+  border-radius: 5px;
+  border: 1.5px solid #00a2ffc5;
+  text-indent: 50%;
+}
+
+* label {
+  font-size: 17px;
+}
+input {
+  padding: 2px;
+}
+:is(input, label):focus {
+  outline: 1.5px solid #00a2ffc5;
+}
