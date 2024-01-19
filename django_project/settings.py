@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-7&os65-(m4o3v=&nm_*l5kqlpj%54d^%bv!l1y=4*_t$w9=!7y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'fingerprint-analysis.up.railway.app',
+    ]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
