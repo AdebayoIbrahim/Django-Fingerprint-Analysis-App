@@ -13,7 +13,7 @@ django-cors-headers==3.14.0
 django-heroku==0.3.1
 djangorestframework==3.14.0
 filelock==3.9.0
-fingerprint_enhancer==0.0.13
+fingerprint_enhancer==0.0.13 --no-deps
 Flask==2.2.2
 fonttools==4.38.0
 gunicorn==21.2.0
