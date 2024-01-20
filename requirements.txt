@@ -13,7 +13,9 @@ django-cors-headers==3.14.0
 django-heroku==0.3.1
 djangorestframework==3.14.0
 filelock==3.9.0
-fingerprint_enhancer==0.0.13 --no-deps
+numpy==1.24.1
+scipy==1.10.0
+opencv-python-headless==4.9.0.80
 Flask==2.2.2
 fonttools==4.38.0
 gunicorn==21.2.0
@@ -26,8 +28,6 @@ MarkupSafe==2.1.1
 matplotlib==3.6.2
 mysql-connector==2.2.9
 mysql-connector-python==8.2.0
-numpy==1.24.1
-opencv-python-headless==4.9.0.80
 packaging==22.0
 Pillow==9.4.0
 platformdirs==2.6.2
@@ -37,7 +37,6 @@ pyparsing==3.0.9
 python-dateutil==2.8.2
 pytz==2022.7.1
 requests==2.28.1
-scipy==1.10.0
 six==1.16.0
 sqlparse==0.4.3
 typing_extensions==4.9.0
@@ -46,3 +45,4 @@ urllib3==1.26.13
 virtualenv==20.17.1
 Werkzeug==2.2.2
 whitenoise==6.6.0
+fingerprint_enhancer==0.0.13 --no-deps
