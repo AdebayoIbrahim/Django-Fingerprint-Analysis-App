@@ -27,7 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'fingerprint-analysis.up.railway.app',
-    '127.0.0.1'
+    '127.0.0.1',
+    'fingerprint-analysis.onrender.com'
 ]
 
 MEDIA_URL = '/media/'
@@ -125,10 +126,12 @@ USE_TZ = True
 CORS_ALLOWED_ORIGINS = [
     'http://127.0.0.1:8000',
     'https://fingerprint-analysis.up.railway.app',
+    'https://fingerprint-analysis.onrender.com'
 ]
 
 CSRF_TRUSTED_ORIGINS = [
     'https://fingerprint-analysis.up.railway.app',
+    'https://fingerprint-analysis.onrender.com'
 ]
 
 
