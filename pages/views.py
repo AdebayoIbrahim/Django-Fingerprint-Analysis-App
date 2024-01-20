@@ -35,16 +35,10 @@ def external(request):
         print("raw url =>",filename)
         print("full url =>",fileurl)
         print("template url =>",templateurl)
-    
-
-
-
 
         # Binarize file image
         # --------   Binarize -------
         # image = run([sys.executable,  "C:\\Users\\SetUp\\Desktop\\code\\pages\\django_  project\\Binarize.py",str(fileurl),str    (filename)],shell = False,stdout = PIPE)
-    
-
         image = run([sys.executable,
         os.path.join(settings.BASE_DIR, 'Binarize.py'), str(fileurl),str(filename)],shell = False,   stdout = PIPE)
     
