@@ -45,4 +45,4 @@ urllib3==1.26.13
 virtualenv==20.17.1
 Werkzeug==2.2.2
 whitenoise==6.6.0
-fingerprint_enhancer==0.0.13 --no-deps
+fingerprint_enhancer==0.0.13
