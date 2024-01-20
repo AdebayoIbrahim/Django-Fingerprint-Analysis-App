@@ -1,0 +1,1 @@
+This media folder is where the image result of the analysis is saved
