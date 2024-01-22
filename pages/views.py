@@ -48,7 +48,7 @@ def external(request):
 
         # Normalize file image
         # --------   Normalize -------
-        # image = run([sys.executable,os.path.join    (settings.BASE_DIR,'Normalize.py'),str(fileurl),    str(filename)],shell = False,stdout = PIPE)
+        image = run([sys.executable,os.path.join    (settings.BASE_DIR,'Normalize.py'),str(fileurl),    str(filename)],shell = False,stdout = PIPE)
 
         # Oriental Filtering of finger
         # -------- Oriental filter -----
