@@ -44,11 +44,11 @@ def external(request):
     
         # segmentize file image
         # --------   Segmentize -------
-        image = run([sys.executable,os.path.join    (settings.BASE_DIR,'segmentize.py'),str (fileurl),str(filename)],shell = False,stdout =  PIPE)
+        # image = run([sys.executable,os.path.join    (settings.BASE_DIR,'segmentize.py'),str (fileurl),str(filename)],shell = False,stdout =  PIPE)
 
         # Normalize file image
         # --------   Normalize -------
-        image = run([sys.executable,os.path.join    (settings.BASE_DIR,'Normalize.py'),str(fileurl),    str(filename)],shell = False,stdout = PIPE)
+        # image = run([sys.executable,os.path.join    (settings.BASE_DIR,'Normalize.py'),str(fileurl),    str(filename)],shell = False,stdout = PIPE)
 
         # Oriental Filtering of finger
         # -------- Oriental filter -----
